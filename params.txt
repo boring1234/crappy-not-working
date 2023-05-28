@@ -1,0 +1,2 @@
+analog potrait of ukj man
+Steps: 1, CFG scale: 7.0, Seed: 637196260, Size: 512x512, Model hash: a580074acf, Model: New, Seed resize from: -1x-1, Denoising strength: 0.75, Version: v1.3.0
