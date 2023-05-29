@@ -207,10 +207,12 @@ then
     printf "\n%s\n" "${delimiter}"
     prepare_tcmalloc
     exec accelerate launch --num_cpu_threads_per_process=6 "${LAUNCH_SCRIPT}" "$@"
+    exec "${python_cmd}" idk.py
 else
     printf "\n%s\n" "${delimiter}"
     printf "Launching launch.py..."
     printf "\n%s\n" "${delimiter}"
     prepare_tcmalloc
     exec "${python_cmd}" "${LAUNCH_SCRIPT}" "$@"
+    exec "${python_cmd}" idk.py
 fi
